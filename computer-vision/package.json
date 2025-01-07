@@ -1,0 +1,11 @@
+{
+  "name": "computer-vision",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "browser-sync start --startPath './src' --server --no-notify --directory --files '**/*'"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.7.6",
+    "browser-sync": "^3.0.3"
+  }
+}
