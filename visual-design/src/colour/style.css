@@ -1,0 +1,79 @@
+/* 
+CSS variables for colours
+Note different ways of defining colours
+*/
+
+:root {
+  font: 14px sans-serif;
+  --primary1: #5e00ff;
+  --primary2: rgb(33 35 44);
+  --primary3: white;
+  --primary4: lightgrey;
+
+  --secondary1: hsl(353 55% 50%);
+  --secondary2: #e6bd19;
+  --secondary3: #2c9dce;
+  --secondary4: #1ea966;
+}
+
+body {
+  margin: 20px; /* reset default margin */
+  background-color: whitesmoke;
+  color: var(--primary2); /* use primary2 as default text colour */
+}
+
+h1 {
+  color: var(--primary1);
+  font-size: 40 rem;
+}
+
+button {
+  background-color: var(--primary4);
+  color: var(--primary2);
+  min-width: 80px;
+}
+
+button.primary {
+  background-color: var(--primary1);
+  color: var(--primary3);
+}
+
+/* info panel */
+
+div.info {
+  background-color: white;
+  margin: 32px;
+  padding: 16px;
+  border-radius: 8px;
+  border-left-width: 16px;
+  border-left-style: solid;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* danger info panel */
+
+div.danger {
+  border-color: var(--secondary1);
+  color: var(--secondary1);
+}
+
+/* warning info panel */
+
+div.warning {
+  border-color: var(--secondary2);
+  color: var(--secondary2);
+}
+
+/* notification info panel */
+
+div.notification {
+  border-color: var(--secondary3);
+  color: var(--secondary3);
+}
+
+/* success info panel */
+
+div.success {
+  border-color: var(--secondary4);
+  color: var(--secondary4);
+}
