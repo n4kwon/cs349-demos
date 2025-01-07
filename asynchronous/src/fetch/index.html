@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>fetch</title>
+  </head>
+  <body>
+    <select id="source">
+      <option>
+        https://jsonplaceholder.typicode.com/albums/2/photos
+      </option>
+      <option>
+        https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0
+      </option>
+      <option>
+        http://universities.hipolabs.com/search?country=canada
+      </option>
+      <option>http://badrequest.com</option>
+    </select>
+    <button id="fetch">Fetch</button>
+
+    <pre id="results"></pre>
+
+    <!-- uncomment to see loading animation -->
+    <!-- <div id="loader" style="display: none; justify-content: center">
+      <div class="loader"></div>
+    </div> -->
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>
