@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      /* reset */
+      body {
+        margin: 0;
+        padding: 40px;
+      }
+
+      /* use alternative box model */
+      div {
+        box-sizing: border-box;
+      }
+
+      /* flex container */
+      div#main {
+        padding: 10px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      /* flex items */
+      div#main > div {
+        background-color: deepskyblue;
+        padding: 20px;
+        width: 200px;
+        flex-grow: 1;
+        /* flex-shrink: 1; */
+        /* flex-basis: auto; */
+        /* margin: 20px; */
+        /* flex: 1 1 auto; */
+      }
+
+      /* special flex item */
+      /* div#main > div#b {
+        background-color: orangered;
+        flex-shrink: 0;
+        align-self: stretch;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="a">A</div>
+      <div id="b">B</div>
+      <div id="c">C</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use alternative box model */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* define common styles for app */
+
+div#app {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+div#panel {
+  margin: 50px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  gap: 50px;
+}
+
+/* styles for LeftView */
+
+div#left {
+  padding: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#left > button {
+  min-width: 80px;
+}
+
+/* styles for RightView */
+
+div#right {
+  padding: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  flex: 1 1 0;
+  flex-flow: row wrap;
+  display: flex;
+  align-content: flex-start;
+  overflow: scroll;
+}
+
+/* the number squares */
+div#right > div {
+  margin: 5px;
+  padding: 10px;
+  background-color: lightgrey;
+  flex: 0 0 auto;
+}
