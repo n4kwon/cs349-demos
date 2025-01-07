@@ -1,0 +1,33 @@
+div.counter {
+  font: 16px sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+
+  border: 1px solid slategrey;
+  background-color: whitesmoke;
+  align-items: stretch;
+
+  > div {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  > div:first-child {
+    cursor: pointer;
+    /* user-select: none; */
+  }
+
+  > div:first-child:hover {
+    font-weight: bold;
+    background-color: white;
+  }
+}
